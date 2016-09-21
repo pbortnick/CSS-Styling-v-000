@@ -1,0 +1,69 @@
+/* This is a comment */
+<style>
+  @import 'https://fonts.googleapis.com/css?family=Elsie+Swash+Caps';
+  @import 'https://fonts.googleapis.com/css?family=Clicker+Script';
+</style>
+/*
+CSS Syntax:
+selector {property: value;
+          propert: value;}
+Type selector:
+p {select all <p> elements}
+font-size: 16px;
+16px,
+?pt *not always the same in each browser*,
+100% *relative amount and dependent on element and parent elemtns*,
+1em *eqaulst pixel/16, relative and has different widths*
+*/
+
+p {font-size: 1em;
+  line-height: 1.5em;}
+
+figcaption {
+  /* font-weight: normal;
+  font-size: 0.75em;
+  line-height: 1.5em;
+  font-family: Georgia, "New Times Roman", serif; */
+  /* use google fonts */
+  font: normal 0.75em/1.5em 'Elsie Swash Caps', cursive;
+  color: #777;/*use digital color meter*/
+  text-align: right;}
+
+/* Class selector (applied to as many elements as you like) */
+
+.milk-text { /* select elements with a class="milk-text" */
+font: bold 2.6em 'Elsie Swash Caps', cursive;
+color: white;
+text-shadow: 0 2px 3px #000;
+}
+
+/* ID selector (apply to one unique element per page) */
+
+#logo { /* select elements with the id=logo */
+  background: aqua;
+}
+
+/* Descendent Selector */
+
+#logo h1 { /* selects <h1> if inside id="logo" */
+  font-family: 'Clicker Script', cursive;
+}
+
+#logo h2 {
+  font-family: 'Elsie Swash Caps', cursive;
+}
+
+/* Pseudo Selector */
+#details a:link, #details a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+#details a:hover{
+  color: black;
+  text-decoration: underline;
+}
+
+#details a:active {
+  color: red;
+}
